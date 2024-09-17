@@ -1,0 +1,139 @@
+/*Reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+/*Back*/
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Header */
+.main-title {
+  font-size: 300%;
+}
+
+.slogan {
+  font-size: 100%;
+  color: #ffd700;
+}
+
+.nav-decoration {
+  box-shadow: #ffffff 0 4px 6px -2px;
+  font-size: 100%;
+}
+
+/*Main*/
+
+/*Movies*/
+.movie {
+  width: 13rem;
+  margin-bottom: 2%;
+}
+
+img {
+  height: 18rem;
+}
+
+.release-date {
+  background-color: #FFF;
+  color: #000000;
+  margin-bottom: auto;
+  font-weight: bolder;
+}
+
+/*Forms*/
+.input-decoration {
+  background-color: #000000 !important;
+  color: #ffffff;
+}
+
+.input-decoration:focus {
+  outline: none;
+  background-color: black !important;
+  color: white !important;
+  box-shadow: white;
+}
+
+.pass-remind {
+  text-decoration: none;
+  color: #FFF;
+  font-size: small;
+}
+
+.pass-remind:hover {
+  text-decoration: none;
+  color: gray;
+}
+
+/*Button*/
+.btn-decoration {
+  background-color: #d30202;
+  border: #d30202 solid 1px;
+  color: #ffffff;
+}
+
+.btn-decoration:hover {
+  background-color: #850000;
+  border: #850000 solid 1px;
+  color: #ffffff;
+}
+
+/*Candybar*/
+.art-candy {
+  font-size: 1rem;
+  border: #000000 solid 1px;
+}
+
+.img-candy {
+  width: 15rem;
+  height: 8rem;
+}
+
+.candy-title {
+  color: #FFF;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+
+.candy-btn {
+  width: 100%;
+  height: 100%;
+}
+
+/*Wapp*/
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
+  background-color: #25d366;
+}
+
+/*Footer*/
+footer {
+  padding: 5%;
+  font-size: 9px;
+  color: #656565;
+}
+
+.foot {
+  font-size: 13px;
+}
