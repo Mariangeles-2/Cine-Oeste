@@ -21,46 +21,30 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg border-bottom border-body nav-decoration" data-bs-theme="dark">
+        <div class="navbar navbar-expand-lg border-bottom border-body nav-decoration" data-bs-theme="dark">
             <div class="container-fluid">
                 <div class="mx-3">
-                    <h1 class="navbar-brand main-title">Cine Oeste</h1>
-                    <p class="slogan">La función empieza acá, en casa</p>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="login.html">Ingresá</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="registro.html">Registrate</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="proximos-estrenos.html">Próximos Estrenos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Candy Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
-                        </li>
-                    </ul>
+                    <a href="../index.html"><h1 class="navbar-brand main-title">Cine Oeste</h1>
+                    <p class="slogan">La función empieza acá, en casa</p></a>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
 
     <main class="container-fluid my-4">
-        <div class="candy-shop">
-            <h2 class="display-6 text-center mb-5">Candyshop</h2>
-            <div class="container text-center">
+
+        <div class="candy-shop candy-shop-grid-area">
+
+            <h2 class="display-6 text-center mb-5 candy-shop-title">Candyshop</h2>
+
+            <div class="container-ticket">
+                <img class="ticket" src="../assets/candy/ticket-top.png" alt="ticket">
+                <h5 class="ticket-title">Cine Oeste</h5>
+                <div class="blank-ticket"></div>
+                <img class="ticket" src="../assets/candy/ticket-bottom.png" alt="ticket">
+            </div>
+
+            <div class="container text-center container-candys">
                 <div class="row row-cols-3 g-3">
 
                     <div class="col-12 mt-3 mb-2">
@@ -210,7 +194,7 @@
 
     </main>
 
-    <footer>
+    <footer class="candy-footer">
         <h3>Nuestras Redes</h3>
         <p class="foot">Info@cineoeste.com.ar</p>
         <i class="fa-brands fa-instagram"> @Cine-Oeste</i>
