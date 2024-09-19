@@ -7,10 +7,20 @@
 }
 
 /*Back*/
+html {
+  min-height: 100%;
+  position: relative;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
   font-family: "Poppins", sans-serif;
+  margin-bottom: 25%;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*Header */
@@ -85,6 +95,23 @@ img {
 }
 
 /*Candybar*/
+.candy-shop-grid-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 1rem;
+  grid-template-areas:
+    "candy-shop-title candy-shop-title candy-shop-title"
+    "container-candys container-candys container-ticket"
+}
+
+.candy-shop-title {
+  grid-area: candy-shop-title;
+}
+
+.container-candys {
+  grid-area: container-candys;
+}
+
 .art-candy {
   font-size: 1rem;
   border: #000000 solid 1px;
@@ -106,34 +133,142 @@ img {
   height: 100%;
 }
 
+/*Ticket*/
+.container-ticket {
+  grid-area: container-ticket;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket {
+  width: 100%;
+  height: 7%;
+}
+
+.blank-ticket {
+  background-color: #FFF;
+  min-height: 10rem;
+  width: 100%;
+}
+
+.ticket-title {
+  font-size: 2rem;
+  background-color: #FFF;
+  color: #000000;
+  width: 100%;
+  margin-bottom: 0%;
+  padding-bottom: 2%;
+  text-align: center;
+  border-bottom: #656565 dotted 2px;
+}
+
 /*Wapp*/
-.float {
+.wapp-item {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 4rem;
+  height: 4rem;
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
   color: #FFF;
   border-radius: 50px;
   text-align: center;
-  font-size: 30px;
+  font-size: 2rem;
   box-shadow: 2px 2px 3px #999;
   z-index: 100;
 }
 
-.my-float {
-  margin-top: 16px;
+.my-wapp-item {
+  margin-top: 1rem;
   background-color: #25d366;
 }
 
 /*Footer*/
 footer {
-  padding: 5%;
-  font-size: 9px;
-  color: #656565;
+  box-shadow: #ffffff 4px -2px 6px -1px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
-.foot {
-  font-size: 13px;
+.social-media-footer {
+  padding: 2%;
+}
+
+.social-media-title {
+  font-size: 120%;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-media-item {
+  margin-bottom: 1.5%;
+  font-size: 70%;
+}
+
+.social-media-text {
+  color: #656565;
+  margin-left: 1%;
+}
+
+/*Media Query*/
+@media (max-width: 767.98px) {
+  .ticket-title {
+    font-size: 1.5rem;
+  }
+
+  .ticket {
+    height: 5%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .candy-shop-grid-area {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    column-gap: 1rem;
+    grid-template-areas:
+      "candy-shop-title candy-shop-title candy-shop-title"
+      "container-candys container-candys container-candys"
+      ". container-ticket ."
+  }
+
+  .candy-footer {
+    display: none;
+  }
+
+  .social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .social-media-item {
+    font-size: 60%;
+    width: 33%;
+    text-align: center;
+  }
+
+  .social-media-text {
+    margin-left: 3%;
+  }
+
+  .social-media-title {
+    text-align: center;
+    margin-bottom: 3%;
+  }
+
+  .wapp-item {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+  }
+
+  .my-wapp-item {
+    margin-top: 0.8rem;
+  }
 }
