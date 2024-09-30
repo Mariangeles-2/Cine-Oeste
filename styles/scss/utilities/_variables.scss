@@ -1,0 +1,16 @@
+$light-color: white;
+$dark-color: black;
+$btn-color: #d30202;
+$btn-hover-color: #850000;
+$prominent-color: #ffd700;
+$secondary-color: #656565;
+$wapp-color: #25d366;
+
+@mixin size ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin d-flex-column {
+    
+}

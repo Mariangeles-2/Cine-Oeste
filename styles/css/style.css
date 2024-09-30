@@ -12,18 +12,17 @@ html {
   position: relative;
 }
 
-body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 25%;
-}
-
 a {
   text-decoration: none;
 }
 
-/*Header */
+body {
+  background-color: black;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25%;
+}
+
 .main-title {
   font-size: 300%;
 }
@@ -34,11 +33,9 @@ a {
 }
 
 .nav-decoration {
-  box-shadow: #ffffff 0 4px 6px -2px;
+  box-shadow: white 0 4px 6px -2px;
   font-size: 100%;
 }
-
-/*Main*/
 
 /*Movies*/
 .movie {
@@ -51,16 +48,16 @@ img {
 }
 
 .release-date {
-  background-color: #FFF;
-  color: #000000;
+  background-color: white;
+  color: black;
   margin-bottom: auto;
   font-weight: bolder;
 }
 
 /*Forms*/
 .input-decoration {
-  background-color: #000000 !important;
-  color: #ffffff;
+  background-color: black !important;
+  color: white;
 }
 
 .input-decoration:focus {
@@ -72,26 +69,26 @@ img {
 
 .pass-remind {
   text-decoration: none;
-  color: #FFF;
+  color: white;
   font-size: small;
 }
 
 .pass-remind:hover {
   text-decoration: none;
-  color: gray;
+  color: #656565;
 }
 
 /*Button*/
 .btn-decoration {
   background-color: #d30202;
   border: #d30202 solid 1px;
-  color: #ffffff;
+  color: white;
 }
 
 .btn-decoration:hover {
   background-color: #850000;
   border: #850000 solid 1px;
-  color: #ffffff;
+  color: white;
 }
 
 /*Candybar*/
@@ -99,9 +96,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   column-gap: 1rem;
-  grid-template-areas:
-    "candy-shop-title candy-shop-title candy-shop-title"
-    "container-candys container-candys container-ticket"
+  grid-template-areas: "candy-shop-title candy-shop-title candy-shop-title" "container-candys container-candys container-ticket";
 }
 
 .candy-shop-title {
@@ -114,7 +109,7 @@ img {
 
 .art-candy {
   font-size: 1rem;
-  border: #000000 solid 1px;
+  border: black solid 1px;
 }
 
 .img-candy {
@@ -123,7 +118,7 @@ img {
 }
 
 .candy-title {
-  color: #FFF;
+  color: white;
   font-size: 1.3rem;
   background-color: transparent;
 }
@@ -147,15 +142,15 @@ img {
 }
 
 .blank-ticket {
-  background-color: #FFF;
+  background-color: white;
   min-height: 10rem;
   width: 100%;
 }
 
 .ticket-title {
   font-size: 2rem;
-  background-color: #FFF;
-  color: #000000;
+  background-color: white;
+  color: black;
   width: 100%;
   margin-bottom: 0%;
   padding-bottom: 2%;
@@ -171,11 +166,11 @@ img {
   bottom: 40px;
   right: 40px;
   background-color: #25d366;
-  color: #FFF;
+  color: white;
   border-radius: 50px;
   text-align: center;
   font-size: 2rem;
-  box-shadow: 2px 2px 3px #999;
+  box-shadow: 2px 2px 3px #656565;
   z-index: 100;
 }
 
@@ -184,9 +179,8 @@ img {
   background-color: #25d366;
 }
 
-/*Footer*/
 footer {
-  box-shadow: #ffffff 4px -2px 6px -1px;
+  box-shadow: white 4px -2px 6px -1px;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -220,55 +214,45 @@ footer {
   .ticket-title {
     font-size: 1.5rem;
   }
-
   .ticket {
     height: 5%;
   }
 }
-
 @media (max-width: 575.98px) {
   .candy-shop-grid-area {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     column-gap: 1rem;
-    grid-template-areas:
-      "candy-shop-title candy-shop-title candy-shop-title"
-      "container-candys container-candys container-candys"
-      ". container-ticket ."
+    grid-template-areas: "candy-shop-title candy-shop-title candy-shop-title" "container-candys container-candys container-candys" ". container-ticket .";
   }
-
   .candy-footer {
     display: none;
   }
-
   .social-media-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-
   .social-media-item {
     font-size: 60%;
     width: 33%;
     text-align: center;
   }
-
   .social-media-text {
     margin-left: 3%;
   }
-
   .social-media-title {
     text-align: center;
     margin-bottom: 3%;
   }
-
   .wapp-item {
     width: 3rem;
     height: 3rem;
     font-size: 1.5rem;
   }
-
   .my-wapp-item {
     margin-top: 0.8rem;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
