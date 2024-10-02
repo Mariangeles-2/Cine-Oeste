@@ -47,6 +47,10 @@ img {
   height: 18rem;
 }
 
+.movie-title {
+  font-size: 130%;
+}
+
 .release-date {
   background-color: white;
   color: black;
