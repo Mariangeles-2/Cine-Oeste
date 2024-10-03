@@ -87,6 +87,7 @@ img {
   background-color: #d30202;
   border: #d30202 solid 1px;
   color: white;
+  transition: all 0.5s ease;
 }
 
 .btn-decoration:hover {
@@ -176,11 +177,22 @@ img {
   font-size: 2rem;
   box-shadow: 2px 2px 3px #656565;
   z-index: 100;
+  transition: all 0.5s ease;
+  animation: bounce 5s infinite ease-in-out;
 }
 
 .my-wapp-item {
   margin-top: 1rem;
   background-color: #25d366;
+  transition: all 0.5s ease;
+}
+
+.my-wapp-item:hover {
+  background-color: #1d9b4a;
+}
+
+.wapp-item:hover {
+  background-color: #1d9b4a;
 }
 
 footer {

@@ -48,6 +48,7 @@ img {
   background-color: $btn-color;
   border: $btn-color solid 1px;
   color: $light-color;
+  transition: all 0.5s ease;
 }
 
 .btn-decoration:hover {
@@ -135,9 +136,20 @@ img {
   font-size: 2rem;
   box-shadow: 2px 2px 3px $secondary-color;
   z-index: 100;
+  transition: all 0.5s ease;
+  animation: bounce 5s infinite ease-in-out;
 }
 
 .my-wapp-item {
   margin-top: 1rem;
   background-color: $wapp-color;
+  transition: all 0.5s ease;
+}
+
+.my-wapp-item:hover {
+  background-color: $wapp-hover-color;
+}
+
+.wapp-item:hover {
+  background-color: $wapp-hover-color;
 }

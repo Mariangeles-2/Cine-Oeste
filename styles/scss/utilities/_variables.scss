@@ -5,8 +5,9 @@ $btn-hover-color: #850000;
 $prominent-color: #ffd700;
 $secondary-color: #656565;
 $wapp-color: #25d366;
+$wapp-hover-color: #1d9b4a;
 
-@mixin size ($w, $h) {
-    width: $w;
-    height: $h;
+@mixin size($w, $h) {
+  width: $w;
+  height: $h;
 }
