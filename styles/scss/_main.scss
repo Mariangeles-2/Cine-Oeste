@@ -1,0 +1,155 @@
+/*Movies*/
+.movie {
+  width: 13rem;
+  margin-bottom: 2%;
+}
+
+img {
+  height: 18rem;
+}
+
+.movie-title {
+  font-size: 130%;
+}
+
+.release-date {
+  background-color: $light-color;
+  color: $dark-color;
+  margin-bottom: auto;
+  font-weight: bolder;
+}
+
+/*Forms*/
+.input-decoration {
+  background-color: $dark-color !important;
+  color: $light-color;
+}
+
+.input-decoration:focus {
+  outline: none;
+  background-color: $dark-color !important;
+  color: $light-color !important;
+  box-shadow: $light-color;
+}
+
+.pass-remind {
+  text-decoration: none;
+  color: $light-color;
+  font-size: small;
+}
+
+.pass-remind:hover {
+  text-decoration: none;
+  color: $secondary-color;
+}
+
+/*Button*/
+.btn-decoration {
+  background-color: $btn-color;
+  border: $btn-color solid 1px;
+  color: $light-color;
+  transition: all 0.5s ease;
+}
+
+.btn-decoration:hover {
+  background-color: $btn-hover-color;
+  border: $btn-hover-color solid 1px;
+  color: $light-color;
+}
+
+/*Candybar*/
+.candy-shop-grid-area {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  column-gap: 1rem;
+  grid-template-areas:
+        "candy-shop-title candy-shop-title candy-shop-title"
+        "container-candys container-candys container-ticket"
+}
+
+.candy-shop-title {
+  grid-area: candy-shop-title;
+}
+
+.container-candys {
+  grid-area: container-candys;
+}
+
+.art-candy {
+  font-size: 1rem;
+  border: $dark-color solid 1px;
+}
+
+.img-candy {
+  @include size(15rem, 8rem);
+}
+
+.candy-title {
+  color: $light-color;
+  font-size: 1.3rem;
+  background-color: transparent;
+}
+
+.candy-btn {
+  @include size(100%, 100%);
+}
+
+/*Ticket*/
+.container-ticket {
+  grid-area: container-ticket;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ticket {
+  @include size(100%, 7%);
+}
+
+.blank-ticket {
+  background-color: $light-color;
+  min-height: 10rem;
+  width: 100%;
+}
+
+.ticket-title {
+  font-size: 2rem;
+  background-color: $light-color;
+  color: $dark-color;
+  width: 100%;
+  margin-bottom: 0%;
+  padding-bottom: 2%;
+  text-align: center;
+  border-bottom: $secondary-color dotted 2px;
+}
+
+/*Wapp*/
+.wapp-item {
+  position: fixed;
+  @include size(4rem, 4rem);
+  bottom: 40px;
+  right: 40px;
+  background-color: $wapp-color;
+  color: $light-color;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 2rem;
+  box-shadow: 2px 2px 3px $secondary-color;
+  z-index: 100;
+  transition: all 0.5s ease;
+  animation: bounce 5s infinite ease-in-out;
+}
+
+.my-wapp-item {
+  margin-top: 1rem;
+  background-color: $wapp-color;
+  transition: all 0.5s ease;
+}
+
+.my-wapp-item:hover {
+  background-color: $wapp-hover-color;
+}
+
+.wapp-item:hover {
+  background-color: $wapp-hover-color;
+}
