@@ -24,16 +24,8 @@
         display: none;
     }
 
-    .social-media-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    .social-media-item {
-        font-size: 60%;
-        width: 33%;
-        text-align: center;
+    footer{
+        flex-direction: column !important;
     }
 
     .social-media-text {

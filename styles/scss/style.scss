@@ -2,29 +2,32 @@
 
 /*Reset*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: $dark-color;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $dark-color;
 }
 
 /*Back*/
 html {
-    min-height: 100%;
-    position: relative;
+  min-height: 100%;
+  position: relative;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    background-color: $dark-color;
-    color: $light-color;
-    font-family: "Poppins", sans-serif;
-    margin-bottom: 25%;
+  background-color: $dark-color;
+  color: $light-color;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25%;
 }
 
+.form-control::placeholder {
+  color: $secondary-color;
+}
 
 // Partials
 @import "header";
