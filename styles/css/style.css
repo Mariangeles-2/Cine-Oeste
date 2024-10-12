@@ -103,7 +103,7 @@ img {
 /*Candybar*/
 .candy-shop-grid-area {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr;
   column-gap: 1rem;
   grid-template-areas: "candy-shop-title candy-shop-title candy-shop-title" "container-candys container-candys container-ticket";
 }
@@ -118,12 +118,13 @@ img {
 
 .art-candy {
   font-size: 1rem;
-  border: black solid 1px;
+  border: white solid 1px;
+  margin-left: 2%;
 }
 
 .img-candy {
-  width: 15rem;
-  height: 8rem;
+  width: 10rem;
+  height: 10rem;
 }
 
 .candy-title {
@@ -148,6 +149,18 @@ img {
 .ticket {
   width: 100%;
   height: 7%;
+}
+
+.art-ticket-candy {
+  color: black;
+  background-color: white;
+}
+
+.ticket-candy-total-price {
+  color: black;
+  background-color: white;
+  border: #ffd700 solid 2px;
+  font-weight: bolder;
 }
 
 .blank-ticket {
