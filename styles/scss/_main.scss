@@ -1,7 +1,21 @@
 /*Movies*/
+
+.category-1 {
+  font-family: "Butterfly Kids", cursive;
+  font-size: 200%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+.category-2 {
+  font-family: "Faster One", system-ui;
+  font-size: 200%;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
 .movie {
   width: 13rem;
-  margin-bottom: 2%;
 }
 
 img {
@@ -9,7 +23,8 @@ img {
 }
 
 .movie-title {
-  font-size: 130%;
+  font-size: 100%;
+  white-space: nowrap;
 }
 
 .release-date {
@@ -82,13 +97,14 @@ img {
 }
 
 .img-candy {
-  @include size(10rem, 10rem);
+  @include size(auto, 10rem);
 }
 
 .candy-title {
   color: $light-color;
-  font-size: 1.3rem;
+  font-size: 100%;
   background-color: transparent;
+
 }
 
 .candy-btn {
