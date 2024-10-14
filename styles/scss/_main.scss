@@ -16,6 +16,7 @@
 
 .movie {
   width: 13rem;
+  margin-bottom: 3%;
 }
 
 img {
@@ -32,6 +33,53 @@ img {
   color: $dark-color;
   margin-bottom: auto;
   font-weight: bolder;
+}
+
+/*Calendar*/
+.container-calendar {
+  text-align: center;
+  width: 30%;
+}
+
+ol {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+}
+
+.one-day {
+  grid-column-start: 6;
+}
+
+.selected-day {
+  display: inline-block;
+  background-color: $prominent-color;
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.not-selected-day:hover {
+  @extend .selected-day;
+}
+
+.not-premiere {
+  color: $secondary-color;
+}
+
+.day-name {
+  background-color: $secondary-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+.selected-img-premiere {
+  @include size(20%, 70%);
+}
+
+.selected-trailer {
+  @include size(50%, 100%);
 }
 
 /*Forms*/
@@ -97,7 +145,7 @@ img {
 }
 
 .img-candy {
-  @include size(auto, 10rem);
+  @include size(auto, 15rem);
 }
 
 .candy-title {
@@ -180,4 +228,13 @@ img {
 
 .wapp-item:hover {
   background-color: $wapp-hover-color;
+}
+
+/*Contacto*/
+.thanks-img {
+  background-color: transparent;
+  @include size(30%, 30%);
+  position: absolute;
+  top: 55%;
+  left: 35%;
 }
