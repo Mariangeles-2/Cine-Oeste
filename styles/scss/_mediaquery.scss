@@ -9,6 +9,23 @@
 }
 
 @media (max-width: 768px) {
+
+  /*Index*/
+  .category-1 {
+    font-size: 280%;
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    margin-bottom: 3%;
+  }
+
+  .category-2 {
+    font-size: 280%;
+    writing-mode: horizontal-tb;
+    text-orientation: sideways;
+    margin-bottom: 3%;
+  }
+
+
   /*Footer*/
   .social-media-footer {
     bottom: auto;
@@ -57,8 +74,7 @@
   }
 }
 
-@media (max-width: 575px) {
-
+@media (max-width: 576px) {
   /*Calendar*/
   .premiere:hover {
     border-radius: 25px;
